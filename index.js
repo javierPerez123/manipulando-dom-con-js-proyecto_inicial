@@ -36,8 +36,9 @@
   const checkDeleteActivate = (evento) => {
     evento.preventDefault();
     const lista = document.querySelector('[data-form-lista]');
-    const item = document.querySelector('li')
-    lista.removeChild(item)
+    const elemento = evento.target.parentElement
+    lista.removeChild(elemento)
+
   }
 
   const createTask = (evento) => {
